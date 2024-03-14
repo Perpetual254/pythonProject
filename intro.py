@@ -63,6 +63,72 @@ if nationality=="kenya" or nationality=="uganda" or nationality=="tanzania":
 else:
    print("you qualify")
 
+#how to check whether a number is doo or even
+y=8
+if y % 2 == 0:
+   print("even")
+else:
+   print("odd")
+
+
+#python casting concetenation
+#in this we learn the conversion of integers to strings
+first_name="Mercy"
+last_name=12
+full_name=first_name +"" +str(last_name)
+print(full_name)
+
+#strings to integer
+pens_total=40
+books_total="50"
+grand_total=pens_total+int(books_total)
+
+#stirngs to float
+bucket=20.0
+books="50.0"
+total=bucket+float(books)
+result="the total is:"+str(total)+"kenyan shillings"
+print(result)
+
+
+#LOOPING IN PYTHON
+#the while loop---continue statement
+#in this we skip the statement if it satisfies the condition
+i=1
+while i < 6:
+   i+=1 #3
+   if i==3: #is 3 equal to 3
+     continue
+   print("the answer is",i)
+
+#the for loop statement
+#in this it repeats depending on the items on the sequence
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+visitors=int(input("enter the number of visitors"))
+ugno=0
+kenyano=0
+counter=1
+while counter<=visitors:
+    nationality=input("enter the nationality")
+    if nationality=="kenyan":
+       kenyano+=1
+       print("allowed")
+       counter+=1
+    else:
+        ugno+=1
+        print("not allowed")
+        counter+=1
+
+print("the number of visitors is:",visitors)
+print("the number of kenyans is:",kenyano)
+print("the number of ugandans is:",ugno)
+
+
+
+
 
 
 
