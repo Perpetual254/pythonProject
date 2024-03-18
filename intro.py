@@ -126,6 +126,15 @@ print("the number of visitors is:",visitors)
 print("the number of kenyans is:",kenyano)
 print("the number of ugandans is:",ugno)
 
+#funcions
+#creating a function
+def addition(x,y): #x and y are parameters
+    return x+y #the return is used to show the result of wat am doing
+
+#calling a function
+print("the sum of 5 and 9 is:",addition(9, 4)) #the values that ive given to x and y are known as arguements
+
+
 
 
 
