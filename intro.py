@@ -106,7 +106,7 @@ while i < 6:
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
-
+"""
 visitors=int(input("enter the number of visitors"))
 ugno=0
 kenyano=0
@@ -125,7 +125,7 @@ while counter<=visitors:
 print("the number of visitors is:",visitors)
 print("the number of kenyans is:",kenyano)
 print("the number of ugandans is:",ugno)
-
+"""
 #funcions
 #creating a function
 def addition(x,y): #x and y are parameters
@@ -133,6 +133,108 @@ def addition(x,y): #x and y are parameters
 
 #calling a function
 print("the sum of 5 and 9 is:",addition(9, 4)) #the values that ive given to x and y are known as arguements
+
+
+
+def largest_number():
+    numbers =[76,90,4,56,45]
+    return max(numbers)
+print(largest_number())
+
+#repeating in list
+
+
+#adding items in a tuple
+cars=("bmw","audi","toyota","subaru")
+mycars=list(cars)
+mycars[2]="ferrari","bentley"
+mycars.append("buggati")
+cars=tuple(mycars)
+print(cars)
+
+#dictionaries
+#question 1
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("year")
+print(thisdict)
+
+#question2 of dictionaries
+animals={
+    "pets":"cats",
+    "wild":"lions",
+    "homely":"dogs",
+    "cattle":"cow"
+}
+x =animals.get("homely")
+print(x)
+
+#question3 of dictionaries
+#converting 2 lists into one dictionary
+#we use the zip keyword that joins the two lists
+person=["first_name","last_name","age"]
+name=["suzan","keli","19years"]
+mydict=dict(zip(person,name))
+print(mydict)
+
+
+#this is a way of getting repeated words in a list into a different new list
+#we also learnt how to stop repeatition of elements in a list
+my_list=["apple","banana","cherry","banana","apple","banana"]
+repeated_elements=[]
+
+for items in my_list:
+    if my_list.count(items)>1:
+       if items not in repeated_elements:
+          repeated_elements.append(items)
+
+print(repeated_elements)
+
+
+#sets
+#question 1
+#addition of items into a set
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+#removing items you can use ....remove or discard
+thisset = {"apple", "banana", "cherry"}
+
+thisset.discard("banana")
+
+print(thisset)
+#exception///errors
+try:
+  print(z)
+except:
+  print("An exception occurred")
+
+#the else statement shows that if their is no error it will be executed and will leave the except
+#example
+try:
+  print(z)
+except:
+  print("An exception occurred")
+else:
+  print("An exception occurred")
+
+#the finally statement is executed whether the error exists or not
+#example 3
+
+try:
+  print(z)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+
 
 
 
